@@ -34,8 +34,6 @@ each of the above also requires a migration process (some of which may be nice r
 	- os-level search + select + open-with-correct-app
 
 # Steps
-- generalized dmenu selector
-	- also argument for filtering on tags
 - on top of the selector, a separate tool for opening
 - specialized dmenu selector binding(s)
 	- browser
