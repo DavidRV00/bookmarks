@@ -16,3 +16,5 @@
 
 Each of the above also requires a migration process (some of which may be nice reusable tools).
 
+Also, need some automatic backups.
+
