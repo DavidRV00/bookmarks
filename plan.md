@@ -38,6 +38,5 @@ which may be nice reusable tools).
 - specialized bmark add bindings
 	- like video
 	- feeds
-- add it all to setup
 - migration tools
 
