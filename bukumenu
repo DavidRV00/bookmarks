@@ -1,7 +1,11 @@
 #!/bin/sh
 
-# TODO:
-#		argument to pre-filter on tags
-#		list out url, title, tags
+buku_flag="-p"
+if [ "$1" != "" ]; then
+	buku_flag="--stag $1"
+fi
 
-# get some inspiration from your existing bookmark dmenu script
+buku $buku_flag -f 4 \
+	| sed 's/\t/ /g' \
+	| dmenu -b -i -l 10 \
+	| cut -d ' ' -f 2
