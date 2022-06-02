@@ -1,9 +1,12 @@
 #!/bin/sh
 
 SCRIPT_DIR="$HOME/.local/share/qutebrowser/userscripts/"
-
 mkdir -p $SCRIPT_DIR
 cp qute-buku $SCRIPT_DIR
+
+BIN_DIR="$HOME/bin/"
+mkdir -p $BIN_DIR
+cp bukumenu $BIN_DIR
 
 # NOTE: Setting the keybinding is handled in qutebrowser config.
 #				Should this be part of install?
