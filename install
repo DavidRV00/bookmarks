@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# TODO: Add an 'uninstall', also
+
 # TODO: Should probably check if qutebrowser is actually installed
 SCRIPT_DIR="$HOME/.local/share/qutebrowser/userscripts/"
 mkdir -p $SCRIPT_DIR
