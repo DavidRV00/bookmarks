@@ -35,10 +35,7 @@ which may be nice reusable tools).
 	- os-level search + select + open-with-correct-app
 
 # Steps
-- specialized dmenu selector binding(s)
-	- browser
 - specialized bmark add bindings
-	- browser
 	- like video
 	- feeds
 - add it all to setup
