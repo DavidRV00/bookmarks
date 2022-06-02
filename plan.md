@@ -20,7 +20,8 @@
 - needed for each:
 	- binding to add
 
-each of the above also requires a migration process (some of which may be nice reusable tools).
+each of the above also requires a migration process (some of
+which may be nice reusable tools).
 
 - features:
 	- special tags for different purposes
@@ -34,12 +35,12 @@ each of the above also requires a migration process (some of which may be nice r
 	- os-level search + select + open-with-correct-app
 
 # Steps
-- os-level opener binding
 - specialized dmenu selector binding(s)
 	- browser
 - specialized bmark add bindings
 	- browser
 	- like video
 	- feeds
+- add it all to setup
 - migration tools
 
