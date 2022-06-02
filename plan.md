@@ -34,7 +34,7 @@ each of the above also requires a migration process (some of which may be nice r
 	- os-level search + select + open-with-correct-app
 
 # Steps
-- on top of the selector, a separate tool for opening
+- os-level opener binding
 - specialized dmenu selector binding(s)
 	- browser
 - specialized bmark add bindings

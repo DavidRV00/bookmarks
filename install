@@ -11,3 +11,8 @@ cp bukumenu bukuopen $BIN_DIR
 
 # NOTE: Setting the keybinding is handled in qutebrowser config.
 #				Should this be part of install?
+
+# Config pieces that go with this:
+# - browser bindings
+# - os-level bindings
+# ...
