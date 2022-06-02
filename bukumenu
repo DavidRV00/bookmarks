@@ -7,7 +7,7 @@ if [ "$tag" != "" ]; then
 	buku_flag="--stag $tag"
 fi
 
-buku $buku_flag -f 4 \
+buku --nostdin $buku_flag -f 4 \
 	| sed 's/\t/ /g' \
 	| dmenu -b -i -l 10 \
 	| cut -d ' ' -f 2

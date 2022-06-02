@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# NOTE: This may be a promising way to check a url for mpv-openability:
+# https://github.com/yt-dlp/yt-dlp/blob/master/yt_dlp/YoutubeDL.py#L1352
+
+# xdg-open is probably more general, but buku -o is also usable.
+open_program=xdg-open
+#open_program="buku -o"
+
+# For now this will probably only open things in $BROWSER.
+
+tag="$1"
+bukumenu "$tag" | xargs --no-run-if-empty $open_program
