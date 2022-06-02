@@ -1,1 +1,7 @@
 #!/bin/sh
+
+# TODO:
+#		argument to pre-filter on tags
+#		list out url, title, tags
+
+# get some inspiration from your existing bookmark dmenu script
