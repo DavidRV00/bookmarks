@@ -24,6 +24,8 @@ each of the above also requires a migration process (some of which may be nice r
 
 - features:
 	- special tags for different purposes
+	- integrate qb-style search engines
+	- qb-style quickmarks?
 
 - also:
 	- automatic backups
