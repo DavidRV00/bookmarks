@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# TODO: add "open in new tab" ability
+
+open_flags="$@"
+echo "open $open_flags $(bukumenu)" >> "$QUTE_FIFO"
