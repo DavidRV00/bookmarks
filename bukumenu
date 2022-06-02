@@ -1,8 +1,10 @@
 #!/bin/sh
 
+tag="$1"
+
 buku_flag="-p"
-if [ "$1" != "" ]; then
-	buku_flag="--stag $1"
+if [ "$tag" != "" ]; then
+	buku_flag="--stag $tag"
 fi
 
 buku $buku_flag -f 4 \
