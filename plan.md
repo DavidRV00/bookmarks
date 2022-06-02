@@ -7,14 +7,38 @@
 
 - universal bookmarking applications:
 	- browser
+		- browser binding to search+select web bookmarks
 	- feeds
 	- liked mpv videos
+		- os-level binding to search liked mpv videos
 	- liked posts on websites
 	- watch/read later
 	- facebook saved posts
 	- starred emails?
+	- radio stations?
 
-Each of the above also requires a migration process (some of which may be nice reusable tools).
+- needed for each:
+	- binding to add
 
-Also, need some automatic backups.
+each of the above also requires a migration process (some of which may be nice reusable tools).
+
+- features:
+	- special tags for different purposes
+
+- also:
+	- automatic backups
+	- encryption
+	- notify-send
+	- os-level search + select + open-with-correct-app
+
+# Steps
+- generalized dmenu selector
+	- also argument for filtering on tags
+- specialized dmenu selector binding(s)
+	- browser
+- specialized bmark add bindings
+	- browser
+	- like video
+	- feeds
+- migration tools
 
