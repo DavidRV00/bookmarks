@@ -1,0 +1,15 @@
+#!/bin/sh
+
+buku_tags="$1"
+
+playlist_url="https://www.youtube.com/playlist?list=WL"
+if [ "$2" != "" ]; then
+	playlist_url="$2"
+fi
+
+# TODO: Make auth more general than just using brave cookies
+yt-dlp \
+	--cookies-from-browser brave \
+	-j --flat-playlist "$playlist_url" \
+	| jq -r '.id' | sed 's/^/https:\/\/youtu.be\//g' \
+	| xargs --no-run-if-empty -I {} buku --nostdin --add {} $buku_tags
