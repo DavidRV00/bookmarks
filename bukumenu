@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# TODO: list and select from tags first (or else results are overwhelmed by watch-later)
+#				or maybe exclude watch-later and things like it, by default
+
 tag="$1"
 
 buku_flag="-p"
