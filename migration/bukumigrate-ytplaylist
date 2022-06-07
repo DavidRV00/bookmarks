@@ -7,9 +7,9 @@ if [ "$2" != "" ]; then
 	playlist_url="$2"
 fi
 
+ncores=$(cat /proc/cpuinfo | grep processor | wc -l)
+
 # TODO: Make auth more general than just using brave cookies
-yt-dlp \
-	--cookies-from-browser brave \
-	-j --flat-playlist "$playlist_url" \
+yt-dlp --cookies-from-browser brave -j --flat-playlist "$playlist_url" \
 	| jq -r '.id' | sed 's/^/https:\/\/youtu.be\//g' \
-	| xargs --no-run-if-empty -I {} buku --nostdin --add {} $buku_tags
+	| xargs --no-run-if-empty -P $ncores -I {} buku --nostdin --add {} $buku_tags
